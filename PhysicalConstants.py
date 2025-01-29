@@ -1,0 +1,9 @@
+AtomicMassUnit				    = 1.66054e-27
+BohrMagneton					= 9.274009e-24
+BohrRadius						= 0.52917720859e-10
+BoltzmannConstant			    = 1.38064852e-23
+ElectronCharge				    = 1.602176487e-19
+ReducedPlanckConstant	        = 1.05457148e-34
+SpeedOfLight					= 299792458
+VacuumPermittivity		        = 8.854187817e-12
+VacuumPermeability		        = 12.566370614e-7
