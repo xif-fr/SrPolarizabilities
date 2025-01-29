@@ -2,6 +2,8 @@
 
 Polarizabilities of strontium 5s² 1S0 and 5s5p 3P1 levels for bosonic isotopes only (no hyperfine states).
 
+![plot](./polarizability-curves-600-1600nm.horiz.png)
+
 The predictions are not state-of-the-art, as we simply gathered transitions RDMEs and core polarizabilities scattered in the existing (2024) litterature. It does not use any atomic model unlike Safronova's predictions. For the same reason, we cannot really compute uncertainties. The predictions are not fined tuned to reproduce the magic conditions nor measured (differential) polarizabilities. For instance, our prediction of the linear polarization magic wavelength (measured to be ~914nm) is quite off.
 
 The code can be used to predict polarizabilities for other levels, but the transition table is incomplete and should be completed to accurate prediction.
