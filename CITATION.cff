@@ -1,0 +1,17 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: SrPolarizabilities
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Romaric
+    family-names: Journet
+  - given-names: Félix
+    family-names: Faisant
+repository-code: 'https://github.com/xif-fr/SrPolarizabilities'
+license: MIT
+date-released: '2025-01-29'

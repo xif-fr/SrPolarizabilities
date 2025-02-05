@@ -423,7 +423,8 @@ if __name__ == '__main__':
     ground = energy_level(configuration='5s2', term='1S', J=0)
     excited = energy_level(configuration='5s5p', term='3P', J=1)
     metastable = energy_level(configuration='5s5p', term='3P', J=2)
-    lambda_laser = 1064.7e-9
+    lambda_laser_nm = float(input("Wavelength (nm): "))
+    lambda_laser = lambda_laser_nm * 1e-9
     omega_laser = 2 * pi * c / (lambda_laser)
 
     print(f'{lambda_laser = }m')
@@ -442,15 +443,15 @@ if __name__ == '__main__':
     print(f'δαs-2αt = {(alphae_scalar-alphag_scalar-2*alphae_tensor)/alpha_atomic_unit:.2f} a.u.')
 
     print()
-    print(f'rel. αs = {alphae_scalar/alphag_scalar:.2f}')
-    print(f'rel. αv = {alphae_vector/alphag_scalar:.2f}')
-    print(f'rel. αt = {alphae_tensor/alphag_scalar:.2f}')
-    print(f'rel. αs-αt/2 = {(alphae_scalar-alphae_tensor/2)/alphag_scalar:.2f}')
-    print(f'rel. αs+αt = {(alphae_scalar+alphae_tensor)/alphag_scalar:.2f}')
-    print(f'rel. αs-2αt = {(alphae_scalar-2*alphae_tensor)/alphag_scalar:.2f}')
-    print(f'rel. αs-αt/2+|αv|/2 = {(alphae_scalar-alphae_tensor/2+np.abs(alphae_vector)/2)/alphag_scalar:.2f}')
-    print(f'rel. αs-αt/2-|αv|/2 = {(alphae_scalar-alphae_tensor/2-np.abs(alphae_vector)/2)/alphag_scalar:.2f}')
-    print(f'rel. αs-αt/8+|αv|/2√2 = {(alphae_scalar-alphae_tensor/8+np.abs(alphae_vector)/2/np.sqrt(2))/alphag_scalar:.2f}')
+    print(f'rel. αs = {alphae_scalar/alphag_scalar:.3f}')
+    print(f'rel. αv = {alphae_vector/alphag_scalar:.3f}')
+    print(f'rel. αt = {alphae_tensor/alphag_scalar:.3f}')
+    print(f'rel. αs-αt/2 = {(alphae_scalar-alphae_tensor/2)/alphag_scalar:.3f}')
+    print(f'rel. αs+αt = {(alphae_scalar+alphae_tensor)/alphag_scalar:.3f}')
+    print(f'rel. αs-2αt = {(alphae_scalar-2*alphae_tensor)/alphag_scalar:.3f}')
+    print(f'rel. αs-αt/2+|αv|/2 = {(alphae_scalar-alphae_tensor/2+np.abs(alphae_vector)/2)/alphag_scalar:.3f}')
+    print(f'rel. αs-αt/2-|αv|/2 = {(alphae_scalar-alphae_tensor/2-np.abs(alphae_vector)/2)/alphag_scalar:.3f}')
+    print(f'rel. αs-αt/8+|αv|/2√2 = {(alphae_scalar-alphae_tensor/8+np.abs(alphae_vector)/2/np.sqrt(2))/alphag_scalar:.3f}')
 
     #--------------
 
